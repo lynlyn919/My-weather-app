@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/df25a1a8f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/final-styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="🔍Enter city..."
+            class="form-control"
+            aria-label="Search through site content"
+            style="border-radius: 10px"
+            id="city-input"
+          />
+          <br />
+          <input type="submit" class="submit-button" value="Search" />
+          <button type="button" id="currentButton">Current</button>
+        </form>
+        <br />
+
+        <h1 id="current-city">🎡 Taichung</h1>
+        <h2>
+          <span id="tempC"> 19</span>°C |
+          <a href="#" id="tempF"><span id="tmpF"></span>°F </a>
+        </h2>
+
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li id="date-and-time">Tuesday 16:00</li>
+              <li>Sunny</li>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+                alt="Sunny icon"
+              />
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <li>🌧 Precipitation: 10%</li>
+              <li>💧 Humidity: 64%</li>
+              <li>🌪 Wind: 5 mph</li>
+            </ul>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="col-2">
+            <div class="card" style="width: 10rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Wednesday
+                  <i class="fas fa-cloud-sun fa-cloud-sun"></i>
+                </h5>
+                <p class="card-text">36°C ~ 24°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card" style="width: 10rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Thursday
+                  <i class="fas fa-wind fa-wind"></i>
+                </h5>
+                <p class="card-text">35°C ~ 23°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card" style="width: 10rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Friday
+                  <i class="fas fa-cloud-sun fa-cloud-sun"></i>
+                </h5>
+                <p class="card-text">37°C ~ 25°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card" style="width: 10rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Saturday
+                  <i class="fas fa-cloud fa-cloud"></i>
+                </h5>
+                <p class="card-text">34°C ~ 23°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card" style="width: 10rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Sunday
+                  <i class="fas fa-cloud-sun-rain fa-cloud-sun-rain"></i>
+                </h5>
+                <p class="card-text">32°C ~ 23°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="src/final-index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
