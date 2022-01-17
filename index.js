@@ -10,7 +10,7 @@ function formatDate(date) {
     currentMinute = `0${currentMinute}`;
   }
 
-  let days = ["Sun", "Mun", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let months = [
     "Jan",
     "Feb",
